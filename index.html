@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Suraj Sahu | Java Backend Developer</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <meta name="description" content="Portfolio of Suraj Sahu — Java Backend Developer (Spring Boot, REST APIs, Spark, Elasticsearch)."/>
+  <meta name="description"
+    content="Portfolio of Suraj Sahu — Java Backend Developer (Spring Boot, REST APIs, Spark, Elasticsearch)." />
 </head>
+
 <body class="bg-gray-50 text-gray-800">
 
   <!-- DATA (edit this JSON to update the portfolio) -->
@@ -44,56 +47,34 @@
         ]
       }
     ],
-    "projects": [
+   "projects": [
+  {
+    "name": "JioBrain – Training as a Service",
+    "stack": ["Java", "Microservices", "Elasticsearch", "Kibana", "Postman", "Python/ML", "CSV", "HDFS", "Kafka"],
+    "description": "Worked on JioBrain’s “Training as a Service” module, enabling end-to-end machine learning workflows.\n• Implemented data integration with CSV, HDFS, and Kafka streams, including data definition and normalization for clean datasets.\n• Developed backend logic for model feature selection, hyperparameter tuning (manual & automated), and algorithm selection from 25+ ML algorithms, including neural networks.\n• Built RESTful APIs for model training, status monitoring, and visualization of outputs across anomaly detection, forecasting, and clustering.\n• Enabled retraining workflows to support continuous model improvements and automated updates to AI models.",
+    "period": "Jan 2023 – Present (Full Time)",
+    "location": "Jio Platforms (Onsite)"
+  },
   {
     "name": "Journal Management API",
     "stack": ["Spring Boot", "MongoDB", "Spring Security", "Swagger", "Logback", "Maven", "Git", "Postman"],
-    "description": "Designed and implemented a RESTful backend API for journal entry management. Built full CRUD operations following REST principles and secured endpoints using Spring Security. Documented APIs using Swagger/OpenAPI 3.0 and tested extensively using Postman. Implemented Logback for structured HTTP request/response logging. Developed locally using Eclipse and Maven; used Git for version control.",
-    "link": "https://github.com/soorajsahun/SpringBoot_JournalApp",
+    "description": "Designed and implemented a RESTful backend API for journal entry management using Spring Boot and MongoDB.\n• Built full CRUD operations following REST principles and secured endpoints using Spring Security.\n• Documented APIs using Swagger/OpenAPI 3.0 and tested extensively using Postman.\n• Implemented Logback for structured HTTP request/response logging.\n• Developed locally using Eclipse and Maven; used Git for version control.\n• GitHub: github.com/soorajsahun/SpringBoot_JournalApp",
     "period": "Jan 2025 – Feb 2025",
-    "location": "Self (Offsite)"
-  },
-  {
-    "name": "AI Decision Hub – Jio Brain",
-    "stack": ["Java", "Microservices","Elasticsearch", "Kibana"],
-    "description": "Built a rule-based backend engine that automatically triggered alerts via email, SMS, or API based on real-time conditions. Enhanced system automation and reduced manual effort by 70%. Integrated with logging and alerting through Kibana.",
-    "period": "Jan 2024 – Aug 2024 (Full Time)",
-    "location": "Jio Platforms (Onsite)"
-  },
-  {
-    "name": "JioBrain – Training as a Service",
-    "stack": ["Java", "Microservices","Elasticsearch", "Kibana","Postman", "Python/ML"],
-    "description": "Developed an AI-driven rule execution engine enabling dynamic decision-making based on logical rules applied to AI model outputs. The platform automates actions like notifications, ticket creation, and third-party API calls, enhancing operational efficiency. Key contributions include:
-
-Designed and implemented RESTful APIs for data processing and interaction with AI Decision Hub.
-
-Developed a multithreaded, dynamic rule-based execution engine for evaluating complex logical expressions.
-
-Integrated Jio Brain Platform outputs with the engine for real-time automated actions.
-
-Built notification workflows for emails, SMS, and system integrations.
-
-Implemented logging, tracking, and Elasticsearch-based storage for auditing and performance monitoring.
-
-Conducted unit, regression, and load testing; contributed to system documentation.",
-    "period": "Jan 2023 – Present (Full Time)",
-    "location": "Jio Platforms (Onsite)"
+    "location": "Self (Offsite)",
+    "link": "https://github.com/soorajsahun/SpringBoot_JournalApp"
   },
   {
     "name": "Data Aggregation and Federation Engine (DAFE) – Jio Brain",
-    "stack": ["Java", "Microservices","Elasticsearch", "Kibana","Postman","Spark", "HDFS", "CSV", "Parquet"],
-    "description": "Developed a standalone data aggregation engine integrated with Jio Brain platform, enabling pre-processing of raw data from multiple sources (Kafka, FTP, HDFS, local files) before AI training. Key contributions include:
-
-Designed data source creation, archival, and dynamic field generation with operators like substring and split.
-
-Implemented time-based and hierarchy-based aggregations with user-defined filters across multiple fields and counters.
-
-Developed Query Builder for flexible filtering and aggregation operations (Sum, Min, Max, Avg, Count).
-
-Built UI features for aggregation status tracking, data download, and visualization.
-
-Ensured pre-processed data could seamlessly feed into Jio Brain for model training.",
+    "stack": ["Java", "Microservices", "Elasticsearch", "Kibana", "Postman", "Spark", "HDFS", "CSV", "Parquet"],
+    "description": "Developed a standalone data aggregation engine integrated with Jio Brain platform for pre-processing raw data from multiple sources (Kafka, FTP, HDFS, local files) before AI training.\n• Designed data source creation, archival, and dynamic field generation with operators like substring and split.\n• Implemented time-based and hierarchy-based aggregations with user-defined filters across multiple fields and counters.\n• Developed Query Builder for flexible filtering and aggregation operations (Sum, Min, Max, Avg, Count).\n• Built UI features for aggregation status tracking, data download, and visualization of aggregated data.\n• Ensured pre-processed data could seamlessly feed into Jio Brain as a training datasource.",
     "period": "Jan 2023 – Present (Full Time)",
+    "location": "Jio Platforms (Onsite)"
+  },
+  {
+    "name": "AI Decision Hub – Jio Brain",
+    "stack": ["Java", "Microservices", "Elasticsearch", "Kibana"],
+    "description": "Developed an AI-driven rule execution engine enabling dynamic decision-making based on logical rules applied to AI model outputs, automating notifications, ticket creation, and third-party API calls.\n• Designed and implemented RESTful APIs for data processing and interaction with AI Decision Hub.\n• Developed a multithreaded, dynamic rule-based execution engine for evaluating complex logical expressions.\n• Integrated Jio Brain Platform outputs with the engine for real-time automated actions.\n• Built notification workflows for emails, SMS, and system integrations.\n• Implemented logging, tracking, and Elasticsearch-based storage for auditing and performance monitoring.\n• Conducted unit, regression, and load testing; contributed to comprehensive system documentation.",
+    "period": "Jan 2024 – Aug 2024 (Full Time)",
     "location": "Jio Platforms (Onsite)"
   }
 ]
@@ -130,13 +111,13 @@ Ensured pre-processed data could seamlessly feed into Jio Brain for model traini
     <h2 id="title" class="text-3xl sm:text-4xl font-bold">Java Backend Developer</h2>
     <p id="summary-short" class="mt-4 text-lg max-w-3xl mx-auto"></p>
     <div class="mt-6 flex items-center justify-center gap-4 flex-wrap">
-        <a href="Suraj_Sahu_Resume.pdf" download class="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg shadow hover:bg-blue-700">
-            Download Resume
-          </a>          
+      <a href="Suraj_Sahu_Resume.pdf" download
+        class="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg shadow hover:bg-blue-700">
+        Download Resume
+      </a>
       <span id="address" class="inline-block">Navi Mumbai, Maharashtra, India</span>
     </div>
   </section>
-  
 
   <!-- About -->
   <section id="about" class="max-w-5xl mx-auto py-12 px-4">
@@ -178,7 +159,7 @@ Ensured pre-processed data could seamlessly feed into Jio Brain for model traini
     <p>Email: <a id="email" href="#" class="text-blue-600"></a></p>
     <p>Phone: <a id="phone" href="#" class="text-blue-600"></a></p>
     <p>
-      <a id="linkedin" href="#" class="text-blue-600" target="_blank">LinkedIn</a> | 
+      <a id="linkedin" href="#" class="text-blue-600" target="_blank">LinkedIn</a> |
       <a id="github" href="#" class="text-blue-600" target="_blank">GitHub</a>
     </p>
 
@@ -186,16 +167,11 @@ Ensured pre-processed data could seamlessly feed into Jio Brain for model traini
     <form action="https://formspree.io/f/xgvzbpdr" method="POST" class="mt-8 max-w-md mx-auto space-y-4 text-left">
       <input type="text" name="name" placeholder="Your Name" required
         class="w-full border border-gray-300 rounded-lg px-4 py-2" />
-      
       <input type="email" name="email" placeholder="Your Email" required
         class="w-full border border-gray-300 rounded-lg px-4 py-2" />
-      
       <textarea name="message" rows="4" placeholder="Your Message" required
         class="w-full border border-gray-300 rounded-lg px-4 py-2"></textarea>
-      
-      <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700">
-        Send Message
-      </button>
+      <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700">Send Message</button>
     </form>
   </section>
 
@@ -221,14 +197,10 @@ Ensured pre-processed data could seamlessly feed into Jio Brain for model traini
 
     // Contact
     document.getElementById('address').textContent = data.contact.address;
-    const email = document.getElementById('email');
-    email.textContent = data.contact.email; email.href = 'mailto:' + data.contact.email;
-    const phone = document.getElementById('phone');
-    phone.textContent = data.contact.phone; phone.href = 'tel:' + data.contact.phone.replace(/\s/g, '');
-    const linkedin = document.getElementById('linkedin');
-    linkedin.href = data.contact.linkedin;
-    const github = document.getElementById('github');
-    github.href = data.contact.github;
+    const email = document.getElementById('email'); email.textContent = data.contact.email; email.href = 'mailto:' + data.contact.email;
+    const phone = document.getElementById('phone'); phone.textContent = data.contact.phone; phone.href = 'tel:' + data.contact.phone.replace(/\s/g, '');
+    document.getElementById('linkedin').href = data.contact.linkedin;
+    document.getElementById('github').href = data.contact.github;
 
     // Skills
     const skillsWrap = document.getElementById('skills-list');
@@ -259,22 +231,21 @@ Ensured pre-processed data could seamlessly feed into Jio Brain for model traini
     // Projects
     const projWrap = document.getElementById('projects-wrap');
     data.projects.forEach(p => {
-      const card = document.createElement('a');
-      card.target = '_blank';
-      card.rel = 'noreferrer';
-      card.href = p.link || '#';
-      card.className = 'rounded-xl bg-white border border-gray-200 p-5 hover:shadow-md transition-shadow block';
+      const card = document.createElement('div');
+      card.className = 'rounded-xl bg-white border border-gray-200 p-5 hover:shadow-md transition-shadow';
       card.innerHTML = `
         <div class="flex items-start justify-between gap-4">
           <div>
             <div class="font-semibold text-lg">${p.name}</div>
             ${p.period ? `<div class="text-xs text-gray-500 mt-1">${p.period}</div>` : ''}
+            ${p.location ? `<div class="text-xs text-gray-500 mt-1">${p.location}</div>` : ''}
           </div>
         </div>
-        <p class="mt-3 text-gray-700">${p.description || ''}</p>
+        <p class="mt-3 text-gray-700">${(p.description || '').replace(/\n/g, '<br>')}</p>
         <div class="mt-4 flex flex-wrap gap-2">
           ${(p.stack || []).map(tag => `<span class="px-2.5 py-1 rounded-full text-xs border border-gray-200">${tag}</span>`).join('')}
         </div>
+        ${p.link ? `<div class="mt-3"><a href="${p.link}" target="_blank" class="text-blue-600 hover:underline">View Project</a></div>` : ''}
       `;
       projWrap.appendChild(card);
     });
@@ -292,4 +263,5 @@ Ensured pre-processed data could seamlessly feed into Jio Brain for model traini
     });
   </script>
 </body>
+
 </html>
