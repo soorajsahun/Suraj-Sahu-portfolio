@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Suraj Sahu | Java Backend Developer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <meta name="description" content="Portfolio of Suraj Sahu — Java Backend Developer (Spring Boot, REST APIs, Spark, Elasticsearch)."/>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- DATA (edit this JSON to update the portfolio) -->
+  <script id="portfolio-data" type="application/json">
+  {
+    "name": "Suraj Sahu",
+    "title": "Java Backend Developer",
+    "contact": {
+      "phone": "+91 9372749399",
+      "email": "suraj.sahu.9484@gmail.com",
+      "linkedin": "https://linkedin.com/in/suraj-sahu-109899176",
+      "github": "https://github.com/soorajsahun",
+      "address": "Navi Mumbai, Maharashtra, India"
+    },
+    "summary": "Java Backend Developer with 3+ years of experience in building scalable REST APIs, microservices, and distributed systems using Java, Spring Boot, Apache Spark, and Elasticsearch. Skilled in MySQL, NoSQL, JUnit, multithreading, batch processing, and performance optimization. Passionate about automation and problem-solving.",
+    "skills": [
+      "Java", "Spring Boot", "REST APIs", "Multithreading", "Apache Spark","JUnit", "MySQL", "NoSQL",
+      "Elasticsearch", "Kibana", "SonarQube", "Git", "Postman", "JSON",
+      "Maven", "Eclipse", "IntelliJ IDEA", "Linux",
+      "Microservices", "MongoDB"
+    ],
+    "experience": [
+      {
+        "role": "Java Developer",
+        "company": "Jio Platforms Ltd.",
+        "period": "Jul 2022 – Present (3+ years)",
+        "notice_period": "1 Month",
+        "highlights": [
+          "Developed and optimized Java microservices focused on REST APIs, distributed processing, and automated AI model scheduling (30% faster response time).",
+          "Worked extensively with Elasticsearch and Kibana for scalable data storage, logging, and real-time analytics (processing over 1M+ records daily).",
+          "Optimized large-scale data workflows using multithreading, parallel processing, and batch execution.",
+          "Built a rule-based execution engine with automated triggers (email, SMS, API calls, ticket creation).",
+          "Leveraged Apache Spark for high-performance data processing and transformation.",
+          "Conducted unit and regression testing to ensure code quality, achieving 99.9% uptime and reduced production issues."
+        ]
+      }
+    ],
+    "projects": [
+  {
+    "name": "Journal Management API",
+    "stack": ["Spring Boot", "MongoDB", "Spring Security", "Swagger", "Logback", "Maven", "Git", "Postman"],
+    "description": "Designed and implemented a RESTful backend API for journal entry management. Built full CRUD operations following REST principles and secured endpoints using Spring Security. Documented APIs using Swagger/OpenAPI 3.0 and tested extensively using Postman. Implemented Logback for structured HTTP request/response logging. Developed locally using Eclipse and Maven; used Git for version control.",
+    "link": "https://github.com/soorajsahun/SpringBoot_JournalApp",
+    "period": "Jan 2025 – Feb 2025",
+    "location": "Self (Offsite)"
+  },
+  {
+    "name": "AI Decision Hub",
+    "stack": ["Java", "Microservices","Elasticsearch", "Kibana"],
+    "description": "Built a rule-based backend engine that automatically triggered alerts via email, SMS, or API based on real-time conditions. Enhanced system automation and reduced manual effort by 70%. Integrated with logging and alerting through Kibana.",
+    "period": "Jan 2024 – Aug 2024 (Full Time)",
+    "location": "Jio Platforms (Onsite)"
+  },
+  {
+    "name": "JioBrain – Training as a Service",
+    "stack": ["Java", "Microservices","Elasticsearch", "Kibana","Postman","Spark", "HDFS", "CSV", "Python/ML"],
+    "description": "Worked on JioBrain’s “Training as a Service” module, enabling end-to-end machine learning workflows. Implemented data integration with CSV, HDFS, and Kafka streams, data definition, and normalization. Built backend logic for model feature selection, hyperparameter tuning (manual & auto), and algorithm selection from 25+ ML algorithms including neural networks. Developed APIs for model training, status monitoring, and visualization of outputs across anomaly detection, forecasting, and clustering. Enabled retraining workflows to support continuous model improvements.",
+    "period": "Jan 2023 – Present (Full Time)",
+    "location": "Jio Platforms (Onsite)"
+  }
+]
+,
+    "education": [
+      {
+        "degree": "B.E. Electronics & Telecommunication",
+        "university": "Mumbai University",
+        "college": "Vivekanand Education Society’s Institute of Technology",
+        "period": "2018 – 2022",
+        "cgpa": "8.19/10"
+      }
+    ]
+  }
+  </script>
+
+  <!-- Header -->
+  <header class="p-6 bg-white shadow sticky top-0 z-40">
+    <div class="max-w-5xl mx-auto flex justify-between items-center">
+      <h1 id="name" class="text-2xl font-bold">Suraj Sahu</h1>
+      <nav class="space-x-4 text-sm">
+        <a href="#about" class="hover:text-blue-600">About</a>
+        <a href="#skills" class="hover:text-blue-600">Skills</a>
+        <a href="#experience" class="hover:text-blue-600">Experience</a>
+        <a href="#projects" class="hover:text-blue-600">Projects</a>
+        <a href="#contact" class="hover:text-blue-600">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="text-center py-16 sm:py-20 bg-blue-100">
+    <img src="Suraj.jpg" alt="Suraj Sahu" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover shadow-md">
+    <h2 id="title" class="text-3xl sm:text-4xl font-bold">Java Backend Developer</h2>
+    <p id="summary-short" class="mt-4 text-lg max-w-3xl mx-auto"></p>
+    <div class="mt-6 flex items-center justify-center gap-4 flex-wrap">
+        <a href="Suraj_Sahu_Resume.pdf" download class="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg shadow hover:bg-blue-700">
+            Download Resume
+          </a>          
+      <span id="address" class="inline-block">Navi Mumbai, Maharashtra, India</span>
+    </div>
+  </section>
+  
+
+  <!-- About -->
+  <section id="about" class="max-w-5xl mx-auto py-12 px-4">
+    <h3 class="text-2xl font-bold mb-4">About Me</h3>
+    <p id="summary-full" class="leading-relaxed"></p>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="bg-gray-100 py-12">
+    <div class="max-w-5xl mx-auto px-4">
+      <h3 class="text-2xl font-bold mb-4">Technical Skills</h3>
+      <ul id="skills-list" class="grid grid-cols-2 md:grid-cols-3 gap-3 text-sm"></ul>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience" class="max-w-5xl mx-auto py-12 px-4">
+    <h3 class="text-2xl font-bold mb-4">Experience</h3>
+    <div id="experience-wrap" class="space-y-6"></div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="bg-gray-100 py-12">
+    <div class="max-w-5xl mx-auto px-4">
+      <h3 class="text-2xl font-bold mb-4">Projects</h3>
+      <div id="projects-wrap" class="grid md:grid-cols-2 gap-6"></div>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section id="education" class="max-w-5xl mx-auto py-12 px-4">
+    <h3 class="text-2xl font-bold mb-4">Education</h3>
+    <div id="education-wrap" class="space-y-4"></div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="max-w-5xl mx-auto py-12 px-4 text-center">
+    <h3 class="text-2xl font-bold mb-4">Get in Touch</h3>
+    <p>Email: <a id="email" href="#" class="text-blue-600"></a></p>
+    <p>Phone: <a id="phone" href="#" class="text-blue-600"></a></p>
+    <p>
+      <a id="linkedin" href="#" class="text-blue-600" target="_blank">LinkedIn</a> | 
+      <a id="github" href="#" class="text-blue-600" target="_blank">GitHub</a>
+    </p>
+
+    <!-- Formspree Contact Form -->
+    <form action="https://formspree.io/f/xgvzbpdr" method="POST" class="mt-8 max-w-md mx-auto space-y-4 text-left">
+      <input type="text" name="name" placeholder="Your Name" required
+        class="w-full border border-gray-300 rounded-lg px-4 py-2" />
+      
+      <input type="email" name="email" placeholder="Your Email" required
+        class="w-full border border-gray-300 rounded-lg px-4 py-2" />
+      
+      <textarea name="message" rows="4" placeholder="Your Message" required
+        class="w-full border border-gray-300 rounded-lg px-4 py-2"></textarea>
+      
+      <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700">
+        Send Message
+      </button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-6 bg-white text-center text-sm text-gray-500">
+    © <span id="year"></span> <span id="name-foot">Suraj Sahu</span>. All rights reserved.
+  </footer>
+
+  <!-- JS -->
+  <script>
+    const data = JSON.parse(document.getElementById('portfolio-data').textContent);
+
+    // Header
+    document.getElementById('name').textContent = data.name;
+    document.getElementById('name-foot').textContent = data.name;
+    document.getElementById('title').textContent = data.title;
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Summary
+    const short = data.summary.length > 180 ? data.summary.slice(0, 180) + '…' : data.summary;
+    document.getElementById('summary-short').textContent = short;
+    document.getElementById('summary-full').textContent = data.summary;
+
+    // Contact
+    document.getElementById('address').textContent = data.contact.address;
+    const email = document.getElementById('email');
+    email.textContent = data.contact.email; email.href = 'mailto:' + data.contact.email;
+    const phone = document.getElementById('phone');
+    phone.textContent = data.contact.phone; phone.href = 'tel:' + data.contact.phone.replace(/\s/g, '');
+    const linkedin = document.getElementById('linkedin');
+    linkedin.href = data.contact.linkedin;
+    const github = document.getElementById('github');
+    github.href = data.contact.github;
+
+    // Skills
+    const skillsWrap = document.getElementById('skills-list');
+    data.skills.forEach(s => {
+      const li = document.createElement('li');
+      li.textContent = s;
+      li.className = 'px-3 py-2 rounded-md bg-white border border-gray-200 shadow-sm';
+      skillsWrap.appendChild(li);
+    });
+
+    // Experience
+    const expWrap = document.getElementById('experience-wrap');
+    data.experience.forEach(exp => {
+      const box = document.createElement('div');
+      box.className = 'rounded-xl bg-white border border-gray-200 p-5';
+      box.innerHTML = `
+        <div class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1">
+          <div class="font-semibold">${exp.role} – ${exp.company}</div>
+          <div class="text-sm text-gray-500">${exp.period}${exp.notice_period ? ' • Notice: ' + exp.notice_period : ''}</div>
+        </div>
+        <ul class="mt-3 list-disc pl-5 space-y-2">
+          ${exp.highlights.map(h => `<li>${h}</li>`).join('')}
+        </ul>
+      `;
+      expWrap.appendChild(box);
+    });
+
+    // Projects
+    const projWrap = document.getElementById('projects-wrap');
+    data.projects.forEach(p => {
+      const card = document.createElement('a');
+      card.target = '_blank';
+      card.rel = 'noreferrer';
+      card.href = p.link || '#';
+      card.className = 'rounded-xl bg-white border border-gray-200 p-5 hover:shadow-md transition-shadow block';
+      card.innerHTML = `
+        <div class="flex items-start justify-between gap-4">
+          <div>
+            <div class="font-semibold text-lg">${p.name}</div>
+            ${p.period ? `<div class="text-xs text-gray-500 mt-1">${p.period}</div>` : ''}
+          </div>
+        </div>
+        <p class="mt-3 text-gray-700">${p.description || ''}</p>
+        <div class="mt-4 flex flex-wrap gap-2">
+          ${(p.stack || []).map(tag => `<span class="px-2.5 py-1 rounded-full text-xs border border-gray-200">${tag}</span>`).join('')}
+        </div>
+      `;
+      projWrap.appendChild(card);
+    });
+
+    // Education
+    const eduWrap = document.getElementById('education-wrap');
+    data.education.forEach(ed => {
+      const row = document.createElement('div');
+      row.className = 'rounded-xl bg-white border border-gray-200 p-5';
+      row.innerHTML = `
+        <div class="font-semibold">${ed.degree} — ${ed.college}</div>
+        <div class="text-sm text-gray-500 mt-1">${ed.university} • ${ed.period}${ed.cgpa ? ' • CGPA: ' + ed.cgpa : ''}</div>
+      `;
+      eduWrap.appendChild(row);
+    });
+  </script>
+</body>
+</html>
