@@ -12,11 +12,13 @@
 
 <body class="bg-gray-50 text-gray-800">
 
-  <!-- DATA (edit this JSON to update the portfolio) -->
+  <!-- DATA -->
   <script id="portfolio-data" type="application/json">
   {
     "name": "Suraj Sahu",
     "title": "Software Engineer",
+    "summary": "Java Developer | Big Data & Distributed Systems | AI-Driven Network Performance Analytics",
+    "about": "I am a Software Engineer with 3+ years of experience in backend systems and large-scale data processing. My work focuses on developing services for AI-Driven Network Performance Analytics: collecting and aggregating massive volumes of real-time network data, calculating key performance indicators (KPIs), and storing results for quick search and visualization. These KPIs generate reports on network utilization and other operational metrics that help business teams monitor overall performance. I have also enhanced these platforms with features for anomaly detection, forecasting, and trend analysis, turning operational data into actionable insights that improve reliability and support predictive decision-making.",
     "contact": {
       "phone": "+91 9372749399",
       "email": "suraj.sahu.9484@gmail.com",
@@ -24,12 +26,10 @@
       "github": "https://github.com/soorajsahun",
       "address": "Navi Mumbai, Maharashtra, India"
     },
-    "summary": "Software Engineer with 3+ years of experience in building scalable REST APIs, microservices, and distributed systems using Java, Spring Boot, Apache Spark, and Elasticsearch. Skilled in MySQL, NoSQL, JUnit, multithreading, batch processing, and performance optimization. Passionate about automation and problem-solving.",
     "skills": [
-      "Java", "Spring Boot", "REST APIs", "Multithreading", "Apache Spark","JUnit", "MySQL", "NoSQL",
-      "Elasticsearch", "Kibana", "HTML","CSS","SonarQube", "Git", "Postman", "JSON",
-      "Maven", "Eclipse", "IntelliJ IDEA", "Linux",
-      "Microservices", "MongoDB"
+      "Java", "Spring Boot","Apache Spark" ,"Elasticsearch","REST APIs", "Microservices","SQL", "NoSQL",
+      "JUnit", "Kibana", "HTML","CSS", "Git", "Postman", "JSON",
+      "Maven", "Eclipse", "Linux"
     ],
     "experience": [
       {
@@ -37,50 +37,48 @@
         "company": "Jio Platforms Ltd.",
         "period": "Jul 2022 – Present (3+ years)",
         "notice_period": "1 Month",
-         "highlights": [
-        "Developed and optimized Java microservices for REST APIs, distributed processing, and automated AI model scheduling, reducing response time by 30%.",
-        "Designed and managed 50+ RESTful APIs, handling 100K+ HTTP requests/day with minimal latency.",
-        "Leveraged Apache Spark for high-performance data processing, reducing computational time by 60%.",
-        "Worked extensively with Elasticsearch and Kibana for scalable storage, logging, and real-time analytics, improving query performance by 50% and processing 1M+ records daily.",
-        "Built a rule-based execution engine with automated triggers (email, SMS, API calls, ticket creation), enhancing system automation and reliability.",
-        "Optimized large-scale data workflows and code execution using multithreading, parallel processing, and batch execution, improving overall system performance by 50%.",
-        "Conducted unit and regression testing, ensuring 99.9% system uptime and minimizing production issues.",
-        "Used tools such as WinSCP, MobaXterm, Linux, and Kibana for deployment, monitoring, and logging."
-      ]
+        "highlights": [
+          "Developed and optimized Java microservices for REST APIs, distributed processing, and automated AI model scheduling, reducing response time by 30%.",
+          "Designed and managed 50+ RESTful APIs, handling 100K+ HTTP requests/day with minimal latency.",
+          "Leveraged Apache Spark for high-performance data processing, reducing computational time by 60%.",
+          "Worked extensively with Elasticsearch and Kibana for scalable storage, logging, and real-time analytics, improving query performance by 50% and processing 1M+ records daily.",
+          "Built a rule-based execution engine with automated triggers (email, SMS, API calls, ticket creation), enhancing system automation and reliability.",
+          "Optimized large-scale data workflows and code execution using multithreading, parallel processing, and batch execution, improving overall system performance by 50%.",
+          "Conducted unit and regression testing, ensuring 99.9% system uptime and minimizing production issues.",
+          "Used tools such as WinSCP, MobaXterm, Linux, and Kibana for deployment, monitoring, and logging."
+        ]
       }
     ],
-   "projects": [
-  {
-    "name": "JioBrain – Training as a Service",
-    "stack": ["Java", "Microservices", "Elasticsearch", "Kibana", "Postman", "Python/ML", "CSV", "HDFS", "Kafka"],
-    "description": "Worked on JioBrain’s “Training as a Service” module, enabling end-to-end machine learning workflows.\n• Implemented data integration with CSV, HDFS, and Kafka streams, including data definition and normalization for clean datasets.\n• Developed backend logic for model feature selection, hyperparameter tuning (manual & automated), and algorithm selection from 25+ ML algorithms, including neural networks.\n• Built RESTful APIs for model training, status monitoring, and visualization of outputs across anomaly detection, forecasting, and clustering.\n• Enabled retraining workflows to support continuous model improvements and automated updates to AI models.",
-    "period": "Jan 2023 – Present (Full Time)",
-    "location": "Jio Platforms (Onsite)"
-  },
-  {
-    "name": "Journal Management API",
-    "stack": ["Spring Boot", "MongoDB", "Spring Security", "Swagger", "Logback", "Maven", "Git", "Postman"],
-    "description": "Designed and implemented a RESTful backend API for journal entry management using Spring Boot and MongoDB.\n• Built full CRUD operations following REST principles and secured endpoints using Spring Security.\n• Documented APIs using Swagger/OpenAPI 3.0 and tested extensively using Postman.\n• Implemented Logback for structured HTTP request/response logging.\n• Developed locally using Eclipse and Maven; used Git for version control.\n• GitHub: github.com/soorajsahun/SpringBoot_JournalApp",
-    "period": "Jan 2025 – Feb 2025",
-    "location": "Self (Offsite)",
-    "link": "https://github.com/soorajsahun/SpringBoot_JournalApp-Revised"
-  },
-  {
-    "name": "Data Aggregation and Federation Engine (DAFE) – Jio Brain",
-    "stack": ["Java", "Microservices", "Elasticsearch", "Kibana", "Postman", "Spark", "HDFS", "CSV", "Parquet"],
-    "description": "Developed a standalone data aggregation engine integrated with Jio Brain platform for pre-processing raw data from multiple sources (Kafka, FTP, HDFS, local files) before AI training.\n• Designed data source creation, archival, and dynamic field generation with operators like substring and split.\n• Implemented time-based and hierarchy-based aggregations with user-defined filters across multiple fields and counters.\n• Developed Query Builder for flexible filtering and aggregation operations (Sum, Min, Max, Avg, Count).\n• Built UI features for aggregation status tracking, data download, and visualization of aggregated data.\n• Ensured pre-processed data could seamlessly feed into Jio Brain as a training datasource.",
-    "period": "Jan 2023 – Present (Full Time)",
-    "location": "Jio Platforms (Onsite)"
-  },
-  {
-    "name": "AI Decision Hub – Jio Brain",
-    "stack": ["Java", "Microservices", "Elasticsearch", "Kibana"],
-    "description": "Developed an AI-driven rule execution engine enabling dynamic decision-making based on logical rules applied to AI model outputs, automating notifications, ticket creation, and third-party API calls.\n• Designed and implemented RESTful APIs for data processing and interaction with AI Decision Hub.\n• Developed a multithreaded, dynamic rule-based execution engine for evaluating complex logical expressions.\n• Integrated Jio Brain Platform outputs with the engine for real-time automated actions.\n• Built notification workflows for emails, SMS, and system integrations.\n• Implemented logging, tracking, and Elasticsearch-based storage for auditing and performance monitoring.\n• Conducted unit, regression, and load testing; contributed to comprehensive system documentation.",
-    "period": "Jan 2024 – Aug 2024 (Full Time)",
-    "location": "Jio Platforms (Onsite)"
-  }
-]
-,
+    "projects": [
+      {
+        "name": "JioBrain – AI-Driven Network Performance Analytics",
+        "stack": ["Java", "Microservices", "Elasticsearch", "Kibana", "Postman", "Python/ML", "CSV", "HDFS", "Kafka"],
+        "description": "Worked on JioBrain’s “Training as a Service” module, enabling end-to-end machine learning workflows.\n• Implemented data integration with CSV, HDFS, and Kafka streams, including data definition and normalization for clean datasets.\n• Developed backend logic for model feature selection, hyperparameter tuning (manual & automated), and algorithm selection from 25+ ML algorithms, including neural networks.\n• Built RESTful APIs for model training, status monitoring, and visualization of outputs across anomaly detection, forecasting, and clustering.\n• Enabled retraining workflows to support continuous model improvements and automated updates to AI models.",
+        "period": "Jan 2023 – Present (Full Time)",
+        "location": "Jio Platforms (Onsite)"
+      },
+      {
+        "name": "Data Aggregation and Federation Engine (DAFE) – Jio Brain",
+        "stack": ["Java", "Microservices", "Elasticsearch", "Kibana", "Postman", "Spark", "HDFS", "CSV", "Parquet"],
+        "description": "Developed a standalone data aggregation engine integrated with Jio Brain platform for pre-processing raw data from multiple sources (Kafka, FTP, HDFS, local files) before AI training.\n• Designed data source creation, archival, and dynamic field generation with operators like substring and split.\n• Implemented time-based and hierarchy-based aggregations with user-defined filters across multiple fields and counters.\n• Developed Query Builder for flexible filtering and aggregation operations (Sum, Min, Max, Avg, Count).\n• Built UI features for aggregation status tracking, data download, and visualization of aggregated data.\n• Ensured pre-processed data could seamlessly feed into Jio Brain as a training datasource.",
+        "period": "Jan 2023 – Present (Full Time)",
+        "location": "Jio Platforms (Onsite)"
+      },
+      {
+        "name": "AI Decision Hub – Jio Brain",
+        "stack": ["Java", "Microservices", "Elasticsearch", "Kibana"],
+        "description": "Developed an AI-driven rule execution engine enabling dynamic decision-making based on logical rules applied to AI model outputs, automating notifications, ticket creation, and third-party API calls.\n• Designed and implemented RESTful APIs for data processing and interaction with AI Decision Hub.\n• Developed a multithreaded, dynamic rule-based execution engine for evaluating complex logical expressions.\n• Integrated Jio Brain Platform outputs with the engine for real-time automated actions.\n• Built notification workflows for emails, SMS, and system integrations.\n• Implemented logging, tracking, and Elasticsearch-based storage for auditing and performance monitoring.\n• Conducted unit, regression, and load testing; contributed to comprehensive system documentation.",
+        "period": "Jan 2024 – Aug 2024 (Full Time)",
+        "location": "Jio Platforms (Onsite)"
+      },{
+        "name": "Journal Management API",
+        "stack": ["Spring Boot", "MongoDB", "Spring Security", "Swagger", "Logback", "Maven", "Git", "Postman"],
+        "description": "Designed and implemented a RESTful backend API for journal entry management using Spring Boot and MongoDB.\n• Built full CRUD operations following REST principles and secured endpoints using Spring Security.\n• Documented APIs using Swagger/OpenAPI 3.0 and tested extensively using Postman.\n• Implemented Logback for structured HTTP request/response logging.\n• Developed locally using Eclipse and Maven; used Git for version control.\n• GitHub: github.com/soorajsahun/SpringBoot_JournalApp",
+        "period": "Jan 2025 – Feb 2025",
+        "location": "Self (Offsite)",
+        "link": "https://github.com/soorajsahun/SpringBoot_JournalApp-Revised"
+      }
+    ],
     "education": [
       {
         "degree": "B.E. Electronics & Telecommunication",
@@ -165,7 +163,6 @@
       <a id="github" href="#" class="text-blue-600" target="_blank">GitHub</a>
     </p>
 
-    <!-- Formspree Contact Form -->
     <form action="https://formspree.io/f/xgvzbpdr" method="POST" class="mt-8 max-w-md mx-auto space-y-4 text-left">
       <input type="text" name="name" placeholder="Your Name" required
         class="w-full border border-gray-300 rounded-lg px-4 py-2" />
@@ -193,9 +190,8 @@
     document.getElementById('year').textContent = new Date().getFullYear();
 
     // Summary
-    const short = data.summary.length > 180 ? data.summary.slice(0, 180) + '…' : data.summary;
-    document.getElementById('summary-short').textContent = short;
-    document.getElementById('summary-full').textContent = data.summary;
+    document.getElementById('summary-short').textContent = data.summary;
+    document.getElementById('summary-full').textContent = data.about;
 
     // Contact
     document.getElementById('address').textContent = data.contact.address;
